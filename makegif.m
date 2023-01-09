@@ -11,7 +11,7 @@ for n = 1:size(a,1)
     imshow(I) 
     frame = getframe(h); 
     im = frame2im(frame); 
-    [imind,cm] = rgb2ind(im,256); s
+    [imind,cm] = rgb2ind(im,256);
     % Write to the GIF File 
     if n == 1 
         imwrite(imind,cm,filename,'gif', 'Loopcount',inf,'DelayTime',1); 
